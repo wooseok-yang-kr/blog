@@ -116,3 +116,8 @@ ul.entry-list > li > span {
 ul.entry-list.center > li {
   justify-content: center;
 }
+
+nav.pagination{
+  inline-size: fit-content;
+  margin-inline: auto;
+}

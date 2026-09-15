@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>모든 범주</h1>
+    <h1>Categories</h1>
     <ul class="entry-list">
         {% for term in terms %}
             <li>
                 <a href="{{ term.permalink | safe }}">{{ term.name }}</a>
-                <span>({{ term.pages | length }}개의 글)</span>
+                <span>({{ term.pages | length }} pages)</span>
             </li>
         {% endfor %}
     </ul>

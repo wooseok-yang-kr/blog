@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1 class="title">{{ trans(key="title", lang=lang) }}</h1>
+    <h1 class="title">양우석 블로그</h1>
     <ul class="entry-list center">
         <li>
-            <a href="{{ get_url(path='@/diary/_index.md', lang=lang) }}">{{ trans(key="diary", lang=lang) }}</a>
+            <a href="{{ get_url(path='@/diary/_index.md', lang=lang) }}">Diary</a>
         </li>
         <li>
-            <a href="{{ get_url(path='categories', lang=lang) }}">{{ trans(key="categories", lang=lang) }}</a>
+            <a href="{{ get_url(path='categories', lang=lang) }}">Categories</a>
         </li>
     </ul>
 {% endblock content %}
