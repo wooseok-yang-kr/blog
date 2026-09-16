@@ -3,10 +3,13 @@
     <h1 class="title">양우석 블로그</h1>
     <ul class="entry-list center">
         <li>
-            <a href="{{ get_url(path='@/diary/_index.md', lang=lang) }}">Diary</a>
+            <a href="{{ get_url(path='@/diary/_index.md') }}">Diary</a>
         </li>
         <li>
-            <a href="{{ get_url(path='categories', lang=lang) }}">Categories</a>
+            <a href="{{ get_url(path='@/essay/_index.md') }}">Essay</a>
+        </li>
+        <li>
+            <a href="{{ get_url(path='categories') }}">Categories</a>
         </li>
     </ul>
 {% endblock content %}

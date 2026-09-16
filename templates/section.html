@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
     <h1 class="title">{{ section.title }}</h1>
+    {% if paginator.pages | length == 0 %}
+    	<p>아직 이 섹션에 페이지가 없습니다.</p>
+    {% endif %}
     <ul class="entry-list">
-        <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
         {% for page in paginator.pages %}
             <li>
                 <a href="{{ page.permalink | safe }}"
                    rel="bookmark"
                    title="{{ page.title }}">{{ page.title }}</a>
                 <time datetime="{{ page.date }}"
-                      title="{{ page.date | date(format='%Y년 %m월 %d일') }}">
+                      title="{{ page.date | date(format='%Y-%m-%d') }}">
                     {{ page.date | date(format="%Y-%m-%d") }}
                 </time>
             </li>
