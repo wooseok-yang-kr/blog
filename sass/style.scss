@@ -4,6 +4,9 @@
   --color-text-link: oklch(0.52 0.22 270);
   --color-text-link-visited: oklch(0.50 0.13 270);
 }
+* {
+  background-color: --color-bg;
+}
 
 @font-face {
   font-family: pretendard;
@@ -23,7 +26,6 @@ html {
 }
 
 body {
-  background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
   overflow-wrap: anywhere;
