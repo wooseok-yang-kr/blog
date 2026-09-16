@@ -5,7 +5,7 @@
   --color-text-link-visited: oklch(0.50 0.13 270);
 }
 * {
-  background-color: --color-bg;
+  background-color: var(--color-bg);
 }
 
 @font-face {
