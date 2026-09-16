@@ -10,7 +10,7 @@ build_search_index = true
 taxonomies = [
 	{name = 'categories', feed = true}
 ]
-
+hard_link_static = true
 [markdown]
 
 [markdown.highlighting]
